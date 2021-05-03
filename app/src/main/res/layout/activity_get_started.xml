@@ -7,17 +7,17 @@
     tools:context=".GetStartedAct">
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/view_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/appbg_getstarted"
+        android:background="@drawable/bg_getstarted"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/view_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_overlay_getstarted"
@@ -27,30 +27,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="68dp"
-        android:layout_height="45dp"
+        android:id="@+id/iv_emblem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="230dp"
-        android:src="@drawable/plane_emblem"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/emblem_white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_motto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="48dp"
         android:fontFamily="@font/mregular"
         android:lineSpacingExtra="9dp"
         android:text="@string/get_started_slogan"
         android:textColor="@color/white"
         android:textSize="46sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_emblem" />
 
     <android.widget.Button
         android:id="@+id/btn_sign_in"
@@ -64,7 +62,7 @@
         style="@style/ButtonOrangePrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_motto" />
 
     <android.widget.Button
         android:id="@+id/btn_new_account"

@@ -5,4 +5,7 @@
     <string name="sign_in">SIGN IN</string>
     <string name="new_account">NEW ACCOUNT</string>
     <string name="get_started_slogan">Discover \nThe Beauty \nOf Earth</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="create_new_account_label">Create New Account</string>
 </resources>
