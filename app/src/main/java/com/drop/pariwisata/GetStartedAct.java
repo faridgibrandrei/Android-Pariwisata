@@ -22,5 +22,10 @@ public class GetStartedAct extends AppCompatActivity {
             Intent goToSignIn = new Intent(GetStartedAct.this, SignInAct.class);
             startActivity(goToSignIn);
         });
+
+        btnNewAccount.setOnClickListener(view -> {
+            Intent goToRegisterOne = new Intent(GetStartedAct.this, RegisterOneAct.class);
+            startActivity(goToRegisterOne);
+        });
     }
 }

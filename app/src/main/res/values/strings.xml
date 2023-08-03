@@ -2,10 +2,13 @@
     <string name="app_name">Pariwisata</string>
     <string name="pariwisata">PARIWISATA</string>
     <string name="slogan">Your Best Tourism Partner</string>
+    <string name="continu">CONTINUE</string>
     <string name="sign_in">SIGN IN</string>
     <string name="new_account">NEW ACCOUNT</string>
     <string name="get_started_slogan">Discover \nThe Beauty \nOf Earth</string>
     <string name="username_label">Username</string>
+    <string name="email_label">Email Address</string>
     <string name="password_label">Password</string>
     <string name="create_new_account_label">Create New Account</string>
+    <string name="create_new_account_desc">Please fill up the forms below for information</string>
 </resources>

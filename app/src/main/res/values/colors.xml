@@ -6,6 +6,7 @@
     <color name="orange_secondary">#FFB74D</color>
     <color name="grey_primary">#616161</color>
     <color name="grey_secondary">#9E9E9E</color>
+    <color name="background_primary">#FFEED5</color>
 
     <!-- Red -->
     <color name="red_50">#FFEBEE</color>

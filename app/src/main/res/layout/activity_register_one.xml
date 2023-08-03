@@ -4,26 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_orange_gradient"
-    tools:context=".SignInAct">
+    android:background="@color/background_primary"
+    tools:context=".RegisterOneAct">
 
-    <ImageView
-        android:id="@+id/iv_logo_white"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/logo_white"
+        android:layout_height="310dp"
+        android:background="@drawable/bg_orange_gradient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mregular"
+        android:lineSpacingExtra="9dp"
+        android:text="@string/create_new_account_label"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mlight"
+        android:lineSpacingExtra="9dp"
+        android:text="@string/create_new_account_desc"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/bg_layout_white"
         android:orientation="vertical"
@@ -31,7 +60,7 @@
         android:paddingBottom="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_logo_white">
+        app:layout_constraintTop_toBottomOf="@id/tv_desc">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,30 +122,52 @@
 
         </LinearLayout>
 
-        <android.widget.Button
-            android:id="@+id/btn_sign_in"
-            style="@style/ButtonOrangePrimary"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/mmedium"
-            android:text="@string/sign_in"
-            android:textSize="20sp" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/mlight"
+                android:text="@string/email_label"
+                android:textColor="@color/grey_primary"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_input_condition"
+                android:fontFamily="@font/mmedium"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/btn_new_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mlight"
-        android:text="@string/create_new_account_label"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <android.widget.Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="48dp"
+        android:fontFamily="@font/mmedium"
+        android:textSize="20sp"
+        android:text="@string/continu"
+        style="@style/ButtonOrangePrimary"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
