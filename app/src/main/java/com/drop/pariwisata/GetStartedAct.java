@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class GetStartedAct extends AppCompatActivity {
 
-    Button btnSignIn, btnNewAccount;
+    private Button btnSignIn, btnNewAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

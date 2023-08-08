@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pariwisata">
         <activity
+            android:name=".RegisterTwoAct"
+            android:exported="false" />
+        <activity
             android:name=".RegisterOneAct"
             android:exported="false" />
         <activity android:name=".SignInAct" />
