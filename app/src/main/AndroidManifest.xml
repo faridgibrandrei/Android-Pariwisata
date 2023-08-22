@@ -9,13 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pariwisata">
+        <activity
+            android:name=".SuccessRegisterAct"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterTwoAct"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterOneAct"
+            android:exported="false" />
+        <activity android:name=".SignInAct" />
+        <activity android:name=".GetStartedAct" />
         <activity android:name=".SplashAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
